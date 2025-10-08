@@ -9,8 +9,6 @@ import {
   GamepadIcon,
   Server,
   Smartphone,
-  ChevronLeft,
-  ChevronRight,
   Shield,
 } from "lucide-react";
 import { Card, CardContent } from "../../ui/card";
@@ -191,13 +189,6 @@ const Service: React.FC<ServiceProps> = ({ initialTab = "ai" }) => {
     );
   };
 
-  const prevImage = () => {
-    setCurrentImageIndex((prev) =>
-      prev === 0
-        ? serviceImages[currentTab as keyof typeof serviceImages].length - 1
-        : prev - 1
-    );
-  };
 
   const handleTabChange = (value: string) => {
     setCurrentTab(value);
