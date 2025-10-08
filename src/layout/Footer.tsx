@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   
-  const handleServiceClick = (id) => {
+  const handleServiceClick = (id:any) => {
     if (location.pathname === "/") {
       // Already on home page - dispatch custom event
       console.log("Dispatching service change event:", id);

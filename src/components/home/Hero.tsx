@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { LuBrainCircuit, LuSparkles, LuCpu } from "react-icons/lu";
+import {  LuSparkles, LuCpu } from "react-icons/lu";
 
 const Hero = () => {
   return (
@@ -190,7 +190,7 @@ const Hero = () => {
                   transition={{ duration: 0.6, delay: 0.7 }}
                   className="flex flex-wrap gap-2 md:gap-3 justify-center"
                 >
-                  {["Machine Learning", "Deep Learning"].map((tag, index) => (
+                  {["Machine Learning", "Deep Learning"].map((tag) => (
                     <motion.div
                       key={tag}
                       whileHover={{ scale: 1.05 }}

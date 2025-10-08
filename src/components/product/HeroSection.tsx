@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Shield, Zap, Globe, Lock, User } from "lucide-react";
+import {  Shield, Globe,  User } from "lucide-react";
 
 const HeroSection = () => {
 

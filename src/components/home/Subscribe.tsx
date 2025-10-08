@@ -9,7 +9,6 @@ import {
   Linkedin,
   Github,
   ArrowUp,
-  Circle,
   CircleDot,
 } from "lucide-react";
 
@@ -94,7 +93,7 @@ const Subscribe = () => {
                 { name: "Products", href: "#products" },
                 { name: "Process", href: "#process" },
                 { name: "Contact", href: "#contact" },
-              ].map((link, index) => (
+              ].map((link) => (
                 <li key={link.name}>
                   <motion.a
                     href={link.href}
@@ -124,7 +123,7 @@ const Subscribe = () => {
                 "Mobile Development",
                 "Game Development",
                 "Quantum Computing",
-              ].map((service, index) => (
+              ].map((service) => (
                 <li key={service}>
                   <motion.a
                     href="#services"

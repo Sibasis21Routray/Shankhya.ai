@@ -57,14 +57,14 @@ interface ServiceProps {
 }
 
 const Service: React.FC<ServiceProps> = ({ initialTab = "ai" }) => {
-  const [ref, inView] = useInView({
+  const [ref] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentTab, setCurrentTab] = useState(initialTab);
-  const [autoPlay, setAutoPlay] = useState(true);
+  const [autoPlay] = useState(true);
 
   const services = [
     {

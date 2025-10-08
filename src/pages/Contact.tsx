@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send, Phone, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "../components/contact/ContactForm";
 
 const Contact = () => {
@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="relative overflow-hidden">
       <section
         id="contact"
-        className="flex flex-col lg:flex-row py-5 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"
+        className="flex flex-col  lg:flex-row lg:gap-[10vw] py-5 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 pb-10"
       >
         {/* Left Content */}
         <motion.div
@@ -17,8 +17,8 @@ const Contact = () => {
           viewport={{ once: true }}
           className="order-2"
         >
-          <div className="mt-5">
-            <img src="/contact/contact.png" className="object-fill h-[60vh]" />
+          <div className="lg:mt-[10vh] ">
+            <img src="/contact/contactus.png" className="object-fill h-[60vh]" />
           </div>
 
           {/* Contact Information */}

@@ -1,4 +1,4 @@
-import { Badge } from "../../ui/badge";
+
 import { motion } from "framer-motion";
 import {
   SiReact,

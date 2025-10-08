@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FiMail, FiCheck, FiUser, FiMessageSquare } from "react-icons/fi";
-import { Badge, MessageCircle } from "lucide-react";
+import { motion,  } from "framer-motion";
+import { FiMail, FiUser, FiMessageSquare } from "react-icons/fi";
+
 
 interface FormData {
   name: string;
@@ -12,7 +12,6 @@ interface FormData {
 
 const ContactForm: React.FC = () => {
   const [isSending, setIsSending] = useState<boolean>(false);
-  const [showSuccess, setShowSuccess] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -65,10 +64,10 @@ const ContactForm: React.FC = () => {
         `Name: ${name}\nEmail: ${email}\n\n${message}`
       )}`;
 
-      setShowSuccess(true);
+      
       setTimeout(() => {
         setIsSending(false);
-        setShowSuccess(false);
+        
         setFormData({
           name: "",
           email: "",

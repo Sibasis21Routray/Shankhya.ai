@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, ChevronRight } from "lucide-react";
+import { Menu, X,  } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState<any>(null);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -23,7 +23,7 @@ const Navbar = () => {
     setActiveLink(matchingItem ? matchingItem.id : null);
   }, [location.pathname]);
 
-  const handleNavigate = (url, id) => {
+  const handleNavigate = (url:any, id :any) => {
     setActiveLink(id);
     navigate(url);
     setMobileMenuOpen(false);

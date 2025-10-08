@@ -1,13 +1,9 @@
 import { motion } from "framer-motion";
 import {
-  Play,
   Shield,
   Zap,
   Users,
-  GamepadIcon,
-  Coins,
   Trophy,
-  Settings,
   ArrowRight,
   SquareCheckBig,
 } from "lucide-react";
@@ -202,27 +198,38 @@ const Products = () => {
     },
   ];
 
-  const getThemeColors = (theme) => {
-    const themes = {
-      blue: {
-        gradient: "from-blue-500 to-cyan-500",
-        light: "from-blue-400 to-cyan-400",
-        bg: "from-blue-50 to-cyan-50",
-        text: "text-blue-600",
-        border: "border-blue-200",
-        hover: "hover:border-blue-300",
-      },
-      green: {
-        gradient: "from-green-500 to-emerald-500",
-        light: "from-green-400 to-emerald-400",
-        bg: "from-green-50 to-emerald-50",
-        text: "text-green-600",
-        border: "border-green-200",
-        hover: "hover:border-green-300",
-      },
-    };
-    return themes[theme] || themes.blue;
+interface ThemeColors {
+  gradient: string;
+  light: string;
+  bg: string;
+  text: string;
+  border: string;
+  hover: string;
+}
+
+const getThemeColors = (theme: string): ThemeColors => {
+  const themes: Record<string, ThemeColors> = {
+    blue: {
+      gradient: "from-blue-500 to-cyan-500",
+      light: "from-blue-400 to-cyan-400",
+      bg: "from-blue-50 to-cyan-50",
+      text: "text-blue-600",
+      border: "border-blue-200",
+      hover: "hover:border-blue-300",
+    },
+    green: {
+      gradient: "from-green-500 to-emerald-500",
+      light: "from-green-400 to-emerald-400",
+      bg: "from-green-50 to-emerald-50",
+      text: "text-green-600",
+      border: "border-green-200",
+      hover: "hover:border-green-300",
+    },
   };
+
+  return themes[theme] ?? themes.blue; // default to blue if unknown
+};
+
 
   const containerVariants = {
     hidden: { opacity: 0 },

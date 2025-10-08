@@ -13,7 +13,7 @@ function Home() {
 
   useEffect(() => {
     if (location.hash.startsWith("#service=")) {
-      const selectedService = location.hash.split("=")[1];
+      
 
       // Scroll to services section
       setTimeout(() => {
