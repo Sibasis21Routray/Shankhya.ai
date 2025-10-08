@@ -160,9 +160,8 @@ const HeroSection = () => {
                   {[
                     {
                       user: "Restominder",
-                      action:
-                        "AI-powered restaurant management with real-time analytics",
-                      logo: "/Shankhya.png",
+                      action: "Restaurant management with real-time analytics",
+                      logo: "/restrominder.jpeg",
                       status: "Live",
                       category: "Hospitality AI",
                     },
@@ -170,7 +169,7 @@ const HeroSection = () => {
                       user: "OCRPro",
                       action:
                         "Advanced document processing with multi-language OCR",
-                      logo: "/Shankhya.png",
+                      logo: "/ocrpro.jpeg",
                       status: "Active",
                       category: "Document AI",
                     },
@@ -200,7 +199,7 @@ const HeroSection = () => {
                           <img
                             src={project.logo}
                             alt={`${project.user} logo`}
-                            className="w-12 h-12 object-contain "
+                            className="w-12 h-12 object-cover  rounded-full shadow-2xl "
                           />
                         </div>
 

@@ -132,7 +132,7 @@ const HeroSection: React.FC = () => {
                   transition={{ duration: 0.5 }}
                 >
                   <img
-                    src="https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?semt=ais_hybrid&w=740&q=80"
+                    src="/about/hero.jpg"
                     alt="Modern architectural design"
                     className="w-full h-full object-fill transform group-hover:scale-110 transition-transform duration-700"
                   />
@@ -164,13 +164,9 @@ const HeroSection: React.FC = () => {
                     </div>
                   </div>
                 </motion.div> */}
-
-                
               </div>
             </motion.div>
           </div>
-
-        
         </div>
       </div>
     </div>

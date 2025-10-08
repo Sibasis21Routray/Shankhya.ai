@@ -32,7 +32,7 @@ const stats = [
   return (
     <InView threshold={0.5} triggerOnce>
       {({ inView, ref }) => (
-        <section ref={ref} className="py-20  text-white mt-10 m-5">
+        <section ref={ref} className="py-20  text-white mt-10 m-5 ">
           {/* Header */}
           <motion.div
             className="text-center mb-6"
@@ -69,7 +69,7 @@ const stats = [
             </motion.p>
           </motion.div>
 
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4 ">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
                 <motion.div

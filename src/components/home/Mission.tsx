@@ -103,7 +103,7 @@ const Mission = () => {
           {/* image */}
           <div>
             <img
-              src="https://img.freepik.com/premium-photo/green-arrow-with-mission-word_698953-2889.jpg?semt=ais_hybrid&w=740&q=80"
+              src="/hero/mission.jpg"
               alt="Mission Image"
               className="mx-auto mb-12 rounded-xl  w-full max-w-4xl"
             />

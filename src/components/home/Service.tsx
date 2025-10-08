@@ -20,34 +20,34 @@ import { motion, AnimatePresence } from "framer-motion";
 // Enhanced images for each service
 const serviceImages = {
   ai: [
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
+    "/hero/service/ai1.jpeg",
+    "/hero/service/ai2.jpg",
+    "/hero/service/ai3.webp",
   ],
   blockchain: [
-    "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1639762681057-4e7f6d8a57cc?w=600&h=400&fit=crop",
+    "/hero/service/blockchain1.webp",
+    "/hero/service/blockchain2.jpg",
+    "/hero/service/blockchain3.avif",
   ],
   game: [
-    "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=600&h=400&fit=crop",
+    "/hero/service/game1.jpg",
+    "/hero/service/game2.jpg",
+    "/hero/service/game3.jpg",
   ],
   cloud: [
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop",
+    "/hero/service/cloud1.jpeg",
+    "/hero/service/cloud2.jpg",
+    "/hero/service/cloud3.jpg",
   ],
   mobile: [
-    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&h=400&fit=crop",
+    "/hero/service/mobile.jpeg",
+    "/hero/service/mobile2.jpg",
+    "/hero/service/mobile3.jpg",
   ],
   quantum: [
-    "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop",
+    "/hero/service/quantum2.jpg",
+    "/hero/service/quantum3.jpg",
+    "/hero/service/quantum4.jpg",
   ],
 };
 
@@ -149,7 +149,7 @@ const Service: React.FC<ServiceProps> = ({ initialTab = "ai" }) => {
   ];
 
   // Update currentTab when initialTab prop changes
-  // Add this to your Service component, inside the component function
+  
   useEffect(() => {
     const handleServiceTabChange = (event: CustomEvent) => {
       const { tab } = event.detail;
@@ -304,7 +304,7 @@ const Service: React.FC<ServiceProps> = ({ initialTab = "ai" }) => {
                                 </AnimatePresence>
 
                                 {/* Navigation Arrows */}
-                                <button
+                                {/* <button
                                   onClick={prevImage}
                                   className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm border border-gray-200 text-gray-700 p-2 rounded-lg shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-105"
                                 >
@@ -315,7 +315,7 @@ const Service: React.FC<ServiceProps> = ({ initialTab = "ai" }) => {
                                   className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm border border-gray-200 text-gray-700 p-2 rounded-lg shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-105"
                                 >
                                   <ChevronRight className="h-4 w-4" />
-                                </button>
+                                </button> */}
 
                                 {/* Image Indicators */}
                                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">

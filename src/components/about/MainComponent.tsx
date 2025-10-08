@@ -23,8 +23,8 @@ const MainComponent: React.FC = () => (
           className="flex justify-center order-2 md:order-1"
         >
           <img
-            src="https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJvbnQlMjBlbmQlMjBkZXZlbG9wZXJ8ZW58MHx8MHx8fDA%3Dhttps://images.unsplash.com/photo-1618477247222-acbdb0e159b3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJvbnQlMjBlbmQlMjBkZXZlbG9wZXJ8ZW58MHx8MHx8fDA%3D"
-            alt="Woman listening with headphones"
+            src="/about/computer.jpeg"
+            alt="computer"
             className="w-full max-w-md md:max-w-full max-h-[50vh] md:max-h-[80vh] rounded-lg shadow-xl object-cover"
           />
         </motion.div>

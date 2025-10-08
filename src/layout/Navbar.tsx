@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="fixed w-full z-50 px-4 sm:px-6 py-3 bg-white shadow-lg backdrop-blur-sm bg-opacity-95 border-b border-gray-200"
+      className="fixed w-full z-50 px-4 sm:px-6 py-3 bg-white shadow-lg backdrop-blur-sm bg-opacity-95 border-b border-gray-200 "
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}

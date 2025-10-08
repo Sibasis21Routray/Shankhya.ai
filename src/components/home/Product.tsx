@@ -3,6 +3,7 @@ import { Card, CardContent } from "../../ui/card";
 import { motion } from "framer-motion";
 
 const Product = () => {
+  
   const cardVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {

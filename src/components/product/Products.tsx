@@ -196,6 +196,100 @@ const Products = () => {
         ],
       },
     },
+    {
+      slug: "restroMinder",
+      name: "RestroMinder",
+      theme: "deepblue",
+      productHeadingSection: {
+        name: "RestroMinder",
+        navIcon: "/product/allProducts/restro/logo.png",
+        pathUrl: "/product/restroMinder",
+        productUrl: "https://restrominder.ai/",
+        bgImage: "/product/allProducts/restro/bg.png",
+        heading: "Smart .Restaurant. Management. Simplified.",
+        subheading: "Real-Time Insights. Effortless Operations.",
+        description:
+          "RestroMinder is an intelligent restaurant management system that streamlines operations, enhances customer service, and provides real-time analytics. From table management to inventory tracking — run your restaurant smarter than ever.",
+      },
+      featureSection: {
+        heading: "Built for Modern Restaurants",
+        description:
+          "Manage your restaurant with real-time visibility into orders, tables, staff, and inventory — all from one place.",
+        features: [
+          {
+            title: "Table Management",
+            description:
+              "Easily view, assign, and optimize table occupancy with a dynamic floor plan that updates in real time.",
+            icon: "/product/allProducts/restro/featureIcons/table.png",
+          },
+          {
+            title: "Order Processing",
+            description:
+              "Simplify order taking, reduce errors, and sync directly with the kitchen to ensure faster service.",
+            icon: "/product/allProducts/restro/featureIcons/order.png",
+          },
+          {
+            title: "Analytics Dashboard",
+            description:
+              "Track daily sales, peak hours, and staff performance using real-time data and visual insights.",
+            icon: "/product/allProducts/restro/featureIcons/analytics.png",
+          },
+          {
+            title: "Inventory Control",
+            description:
+              "Monitor ingredient levels, predict restocking needs, and prevent shortages with smart inventory alerts.",
+            icon: "/product/allProducts/restro/featureIcons/inventory.png",
+          },
+          {
+            title: "Multi-Branch Management",
+            description:
+              "Operate multiple outlets effortlessly with centralized control over menus, pricing, and reporting.",
+            icon: "/product/allProducts/restro/featureIcons/branch.png",
+          },
+          {
+            title: "Customer Engagement",
+            description:
+              "Boost loyalty through personalized recommendations, feedback tracking, and targeted promotions.",
+            icon: "/product/allProducts/restro/featureIcons/customer.png",
+          },
+        ],
+      },
+      productBenefits: {
+        image: "/images/products/restro-bg.jpg",
+        keyBenefits: [
+          {
+            id: 1,
+            title: "Real-Time Insights",
+            description:
+              "Monitor every part of your restaurant — from table occupancy to order flow — in real time.",
+          },
+          {
+            id: 2,
+            title: "Optimized Operations",
+            description:
+              "Reduce manual errors and streamline workflows across kitchen, floor, and billing teams.",
+          },
+          {
+            id: 3,
+            title: "Data-Driven Decisions",
+            description:
+              "Leverage analytics to make informed decisions on staffing, menu optimization, and promotions.",
+          },
+          {
+            id: 4,
+            title: "Inventory & Cost Control",
+            description:
+              "Track ingredients, reduce waste, and maintain consistent profitability across all outlets.",
+          },
+          {
+            id: 5,
+            title: "Customer Experience Focused",
+            description:
+              "Enhance dining experiences with quick service, personalized engagement, and digital convenience.",
+          },
+        ],
+      },
+    },
   ];
 
 interface ThemeColors {
@@ -224,6 +318,14 @@ const getThemeColors = (theme: string): ThemeColors => {
       text: "text-green-600",
       border: "border-green-200",
       hover: "hover:border-green-300",
+    },
+    deepblue: {
+      gradient: "from-blue-900 to-indigo-900",
+      light: "from-blue-800 to-indigo-800",
+      bg: "from-blue-100 to-indigo-200",
+      text: "text-indigo-800",
+      border: "border-indigo-700",
+      hover: "hover:border-indigo-600",
     },
   };
 
@@ -281,7 +383,7 @@ const getThemeColors = (theme: string): ThemeColors => {
                 />
               </div>
 
-              <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 ">
+              <div className="relative z-10 max-w-6xl 0 mx-auto px-4 sm:px-6 lg:px-0 ">
                 <motion.div
                   variants={containerVariants}
                   initial="hidden"
@@ -300,7 +402,7 @@ const getThemeColors = (theme: string): ThemeColors => {
                   >
                     <motion.h1
                       variants={itemVariants}
-                      className="text-4xl md:text-7xl font-bold text-gray-900 leading-tight "
+                      className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight "
                     >
                       <span
                         className={`bg-gradient-to-r ${theme.light} bg-clip-text text-transparent`}
@@ -329,8 +431,7 @@ const getThemeColors = (theme: string): ThemeColors => {
                           productData.productHeadingSection.heading.split(
                             "."
                           )[2]
-                        }
-                        .
+                        }.
                       </span>
                     </motion.h1>
                   </motion.div>
