@@ -1,0 +1,96 @@
+import { motion } from "framer-motion";
+import { Mail, MapPin, Send, Phone, MessageCircle } from "lucide-react";
+import ContactForm from "../components/contact/ContactForm";
+
+const Contact = () => {
+  return (
+    <div className="relative overflow-hidden">
+      <section
+        id="contact"
+        className="flex flex-col lg:flex-row py-5 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"
+      >
+        {/* Left Content */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="order-2"
+        >
+          <div className="mt-5">
+            <img src="/contact/contact.png" className="object-fill h-[60vh]" />
+          </div>
+
+          {/* Contact Information */}
+          <div className="space-y-4 text-left items-start">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02, y: -2 }}
+              className="group flex justify-center overflow-hidden"
+            >
+              <div className="flex items-start gap-6">
+                <div className="p-1 ">
+                  <MapPin className="h-6 w-6 text-gray-600" />
+                </div>
+                <div className="flex-1 text-gray-600">
+                  <p>Meydan Road, Nad Al Sheba</p>
+                  <p className="">Dubai, U.A.E.</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02, y: -2 }}
+              className="group flex justify-center overflow-hidden"
+            >
+              <div className="flex items-start gap-4 text-gray-600">
+                <div className="p-1 rounded-xl ">
+                  <Mail className="h-6 w-6 " />
+                </div>
+                <div className="flex-1">
+                  <a href="mailto:connect@shankhya.ai" className="text-lg ">
+                    connect@shankhya.ai
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02, y: -2 }}
+              className="group flex justify-center  overflow-hidden text-gray-600"
+            >
+              <div className="flex items-start gap-4">
+                <div className="p-1 ">
+                  <Phone className="h-6 w-6" />
+                </div>
+                <div className="flex-1">
+                  <a href="tel:+971XXXXXXXXX" className="text-lg ">
+                    +971 XX XXX XXXX
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+
+        {/* Contact Form  */}
+        <div className="order-1">
+          <ContactForm />
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Contact;
