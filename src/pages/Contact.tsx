@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="relative overflow-hidden">
       <section
         id="contact"
-        className="flex flex-col  lg:flex-row lg:gap-[10vw] py-5 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 pb-10"
+        className="flex flex-col  lg:flex-row lg:gap-[10vw] py-5 bg-white pb-10"
       >
         {/* Left Content */}
         <motion.div
