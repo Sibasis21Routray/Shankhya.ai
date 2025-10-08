@@ -229,7 +229,7 @@ const Hero = () => {
                 />
                 <img
                   src="/hero/bot2.png"
-                  className="h-fit lg:h-[80vh] mt-0 lg:mt-[15vh]"
+                  className="h-fit lg:h-[80vh] mt-0 lg:mt-[15vh] ml-10"
                 />
               </div>
             </motion.div>
