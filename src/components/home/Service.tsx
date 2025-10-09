@@ -14,6 +14,8 @@ import {
 import { Card, CardContent } from "../../ui/card";
 import { useInView } from "react-intersection-observer";
 import { motion, AnimatePresence } from "framer-motion";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 
 // Enhanced images for each service
 const serviceImages = {
@@ -286,6 +288,7 @@ const Service: React.FC<ServiceProps> = ({ initialTab = "ai" }) => {
                                       ][currentImageIndex]
                                     }
                                     alt={tab.title}
+                                    loading="lazy"
                                     className="w-full h-full object-cover"
                                     initial={{ opacity: 0, scale: 1.1 }}
                                     animate={{ opacity: 1, scale: 1 }}

@@ -105,6 +105,7 @@ const Mission = () => {
             <img
               src="/hero/mission.jpg"
               alt="Mission Image"
+              loading="lazy"
               className="mx-auto mb-12 rounded-xl  w-full max-w-4xl"
             />
           </div>
