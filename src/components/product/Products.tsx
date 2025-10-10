@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import {
   Shield,
   Zap,
-  Users,
-  Trophy,
   ArrowRight,
   SquareCheckBig,
   Hotel,
