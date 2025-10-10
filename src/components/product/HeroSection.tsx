@@ -38,7 +38,7 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-500" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 pt-20">
         <motion.div
           className="grid lg:grid-cols-2 gap-12 items-center"
           variants={containerVariants}
@@ -127,11 +127,7 @@ const HeroSection = () => {
           {/* Right Content - Enhanced Product Showcase */}
           <motion.div className="relative" variants={itemVariants}>
             <div className="relative w-full max-w-lg mx-auto">
-              {/* Background Pattern */}
-              {/* <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-600/40 via-cyan-600/15 to-cyan-600/50 backdrop-blur-sm">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center mix-blend-overlay opacity-10 rounded-3xl" />
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900/80 to-blue-900/80 rounded-3xl" />
-              </div> */}
+              
 
               {/* Main Card */}
               <motion.div
@@ -144,7 +140,7 @@ const HeroSection = () => {
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl -translate-y-8 -translate-x-8" />
 
                 {/* Card Header */}
-                <div className=" flex flex-row items-center gap-4 mb-3 pb-3 border-b border-white/10">
+                <div className=" flex flex-row items-center gap-4 mb-3 pb-1 border-b border-white/10">
                   <div className=" flex flex-row items-center gap-2">
                     <h3 className="text-2xl font-bold text-white bg-gradient-to-r from-blue-200 to-cyan-200 bg-clip-text text-transparent">
                       Shankhya.AI
@@ -159,11 +155,12 @@ const HeroSection = () => {
                 <div className="relative space-y-2 mb-8">
                   {[
                     {
-                      user: "Restominder",
-                      action: "Restaurant management with real-time analytics",
-                      logo: "/restrominder.jpeg",
+                      user: "Aartha Pro AI",
+                      action:
+                        "Blockchain gaming platform with crypto integration",
+                      logo: "/ArthaAi.png",
                       status: "Live",
-                      category: "Hospitality AI",
+                      category: "Gaming Tech",
                     },
                     {
                       user: "OCRPro",
@@ -174,12 +171,19 @@ const HeroSection = () => {
                       category: "Document AI",
                     },
                     {
-                      user: "Aartha Pro AI",
-                      action:
-                        "Blockchain gaming platform with crypto integration",
-                      logo: "/ArthaAi.png",
+                      user: "Restominder",
+                      action: "Restaurant management with real-time analytics",
+                      logo: "/restrominder.jpeg",
                       status: "Live",
-                      category: "Gaming Tech",
+                      category: "Hospitality",
+                    },
+                    {
+                      user: "Alhajz",
+                      action:
+                        "Smart Hotel Booking for a Seamless Travel Experience.",
+                      logo: "/Alhajz.png",
+                      status: "Live",
+                      category: "Hospitality",
                     },
                   ].map((project, index) => (
                     <motion.div
