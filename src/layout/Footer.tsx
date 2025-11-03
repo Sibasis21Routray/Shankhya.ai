@@ -1,12 +1,7 @@
 import { motion } from "framer-motion";
 import {
   Mail,
-  Phone,
   MapPin,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Github,
   ArrowUp,
   CircleDot,
 } from "lucide-react";
@@ -61,7 +56,7 @@ const Footer = () => {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `url('https://www.transparenttextures.com/patterns/cubes.png')
+            backgroundImage: `url('/cubes.png')
             `,
             backgroundSize: "50px 50px",
           }}
@@ -70,7 +65,7 @@ const Footer = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Main Footer Content */}
-        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -92,7 +87,7 @@ const Footer = () => {
               Transforming ideas into intelligent software solutions through
               cutting-edge AI and modern technology stack.
             </p>
-            <div className="flex justify-center gap-4">
+            {/* <div className="flex justify-center gap-4">
               {[
                 { icon: Facebook, href: "#", color: "hover:text-blue-400" },
                 { icon: Twitter, href: "#", color: "hover:text-cyan-400" },
@@ -109,7 +104,7 @@ const Footer = () => {
                   <social.icon className="w-5 h-5" />
                 </motion.a>
               ))}
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Quick Links */}
@@ -194,24 +189,26 @@ const Footer = () => {
                 className="flex items-center gap-3 text-slate-300"
               >
                 <Mail className="w-5 h-5 text-blue-400" />
-                <span>contact@shankhya.ai</span>
+                <span>connect@shankhya.ai</span>
               </motion.div>
-              <motion.div
+              {/* <motion.div
                 whileHover={{ x: 5 }}
                 className="flex items-center gap-3 text-slate-300"
               >
                 <Phone className="w-5 h-5 text-blue-400" />
                 <span>+1 (555) 123-4567</span>
-              </motion.div>
+              </motion.div> */}
               <motion.div
                 whileHover={{ x: 5 }}
                 className="flex items-start gap-3 text-slate-300"
               >
                 <MapPin className="w-5 h-5 text-blue-400 mt-0.5" />
-                <span>
-                  123 Tech Park Drive
+                <span className=" text-left">
+                  Meydan Grandstand ,6th floor,
                   <br />
-                  San Francisco, CA 94107
+                  Meydan Road, Nad Al Sheba,
+                  <br />
+                  Dubai, U.A.E.
                 </span>
               </motion.div>
             </div>

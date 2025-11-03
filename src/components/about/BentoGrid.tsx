@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   FaLightbulb,
-  FaCrosshairs,
   FaTools,
   FaChartLine,
+  FaCreativeCommonsRemix,
 } from "react-icons/fa";
 
 interface CardProps {
@@ -29,9 +29,9 @@ const Card: React.FC<CardProps> = ({
       case 1:
         return "col-span-1 md:col-span-2 row-span-1";
       case 2:
-        return "col-span-1 md:col-span-1 row-span-1";
+        return "col-span-1 md:col-span-2 row-span-1";
       case 3:
-        return "col-span-1 md:col-span-3 row-span-1";
+        return "col-span-1 md:col-span-2 row-span-1";
       default:
         return "col-span-1 row-span-1";
     }
@@ -93,29 +93,29 @@ const BentoGrid: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto">
         <Card
           icon={<FaLightbulb />}
-          title="Innovation Hub"
-          description="Spark new ideas and bring them to life with cutting-edge technology."
+          title="Creative Excellence"
+          description="We combine art and technology to produce visually stunning and highly functional designs."
           variant="normal"
           index={0}
         />
         <Card
-          icon={<FaCrosshairs />}
-          title="Strategy Core"
-          description="Align your vision with actionable strategies for long-term success."
+          icon={<FaCreativeCommonsRemix />}
+          title="Experienced Professionals"
+          description="Our team brings years of industry experience, ensuring every project meets the highest standards."
           variant="normal"
           index={1}
         />
         <Card
           icon={<FaTools />}
-          title="Toolset Pro"
-          description="Equip your team with the best tools to streamline workflows."
+          title="Toilored Solutions"
+          description="Every client is unique,and so are our designs.We adapt to your vision and goals."
           variant="normal"
           index={2}
         />
         <Card
           icon={<FaChartLine />}
-          title="Growth Engine"
-          description="Accelerate your business with data-driven insights and scalable solutions that drive measurable results."
+          title="Ennovative Approach"
+          description="At Shankhya.Ai, we ware always exploring the latest trends and technologies to keep our designs fresh and relevant."
           variant="tall"
           index={3}
         />

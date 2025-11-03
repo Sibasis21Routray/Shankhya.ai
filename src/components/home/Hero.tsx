@@ -177,10 +177,9 @@ const Hero = () => {
                 </motion.div>
 
                 <p className="text-white text-sm md:text-base leading-relaxed">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aliquid quisquam quis nihil excepturi. Quo, ea quod quasi
-                  autem quam iste aut! Nulla amet porro obcaecati ipsam rem
-                  doloribus, quisquam quo.
+                  We deliver cutting-edge solutions across multiple domains,
+                  leveraging the latest technologies to drive innovation and
+                  growth.
                 </p>
 
                 {/* Tech Tags */}

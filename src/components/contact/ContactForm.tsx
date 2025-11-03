@@ -58,7 +58,7 @@ const ContactForm: React.FC = () => {
 
     setTimeout(() => {
       const { name, email, subject, message } = formData;
-      window.location.href = `mailto:info@quotus.co.in?subject=${encodeURIComponent(
+      window.location.href = `mailto:connect@shankhya.ai?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\n\n${message}`

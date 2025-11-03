@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import ContactForm from "../components/contact/ContactForm";
 
 const Contact = () => {
@@ -22,7 +22,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-4 text-left items-start">
+          <div className="space-y-4 flex flex-col text-left items-start ">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ const Contact = () => {
               </div>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -80,7 +80,7 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
 

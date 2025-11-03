@@ -20,7 +20,7 @@ const Product = () => {
 
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <section id="products" className="py-10">
         <div className="container mx-auto px-6">
           {/* Header */}
@@ -90,7 +90,7 @@ const Product = () => {
                 name: "Aartha Pro AI",
                 icon: <Gamepad className="h-8 w-8 text-blue-500" />,
                 description:
-                  "Next-gen gaming platform with cryptocurrency & blockchain   integration",
+                  "Gaming platform with cryptocurrency & blockchain integration",
                 features: [
                   "Secure Crypto Transactions",
                   "Multi-Game Support",
@@ -119,7 +119,7 @@ const Product = () => {
                 whileHover="hover"
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="relative overflow-hidden border-2 border-blue-500/50  rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <Card className="relative overflow-hidden border-2 border-blue-500/50  rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ">
                   {/* Gradient Border Effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-blue-700/20 opacity-0 hover:opacity-100 rounded-2xl transition-opacity duration-300" />
 

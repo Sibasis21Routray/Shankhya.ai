@@ -6,13 +6,11 @@ const Development = () => {
       {" "}
       <section
         id="process"
-        className=" mb-10 bg-[url('https://wallpapershome.com/images/wallpapers/iphone-16-wallpaper-3840x2160-tech-gadget-modern-aesthetic-25956.jpg')] bg-cover bg-center bg-no-repeat relative"
+        className=" mb-10  relative"
       >
         {/* Overlay for readability */}
 
         <div className="container mx-auto px-4">
-         
-
           {/* Header */}
           <motion.div
             className="text-center mb-6"
@@ -78,7 +76,7 @@ const Development = () => {
             ].map((process) => (
               <div
                 key={process.step}
-                className="relative  p-5 bg-[url('https://www.pixel4k.com/wp-content/uploads/2020/08/abstract-blue-line_1596927840.jpg')] bg-cover bg-center bg-no-repeat"
+                className="relative  p-5 bg-[url('/developmentbg.jpg')] bg-cover bg-center bg-no-repeat"
               >
                 <div className="text-white text-5xl font-bold mb-4">
                   {process.step}

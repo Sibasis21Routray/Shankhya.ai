@@ -6,12 +6,12 @@ import { InView } from "react-intersection-observer";
 function Stats() {
 const stats = [
   {
-    value: 15,
+    value: 10,
     label: "Happy Clients",
     desc: "We’ve partnered with businesses that trust our expertise and continue to grow with us.",
   },
   {
-    value: 50,
+    value: 15,
     label: "Projects Completed",
     desc: "Successfully delivered high-quality projects across various domains and industries.",
   },
@@ -32,7 +32,7 @@ const stats = [
   return (
     <InView threshold={0.5} triggerOnce>
       {({ inView, ref }) => (
-        <section ref={ref} className="py-20  text-white mt-10 m-5 ">
+        <section ref={ref} className="py-10  text-white  m-2 md:m-10">
           {/* Header */}
           <motion.div
             className="text-center mb-6"

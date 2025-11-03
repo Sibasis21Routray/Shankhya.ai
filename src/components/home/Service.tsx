@@ -199,7 +199,7 @@ const Service: React.FC<ServiceProps> = ({ initialTab = "ai" }) => {
 
   return (
     <div className="relative overflow-hidden ">
-      <section id="services" className="py-12 relative" ref={ref}>
+      <section id="services" className=" relative" ref={ref}>
         <div className="container mx-auto px-4 relative z-10">
           {/* Header */}
           <motion.div

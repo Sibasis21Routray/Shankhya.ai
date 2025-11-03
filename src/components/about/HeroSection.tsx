@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const HeroSection: React.FC = () => {
   return (
     <div className="min-h-screen bg-white  overflow-hidden">
-      {/* Sophisticated Background Elements */}
+      {/*  Background Elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse-slow"></div>
       <div
         className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse-slow"
@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
 
       <div className="relative z-10 mt-12 ">
         <div className=" ">
-          {/* Elegant Header */}
+          {/*  Header */}
           <motion.div
             className="text-center mb-8 lg:mb-[10vh] bg-gradient-to-br from-slate-900 via-blue-900 to-cyan-600 p-10"
             initial={{ opacity: 0, y: 40 }}
@@ -51,8 +51,8 @@ const HeroSection: React.FC = () => {
           </motion.div>
 
           {/*  Content Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start ml-5 lg:ml-10">
-            {/* Left Column - Text with sophisticated typography */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start   m-0 md:m-[5vw]">
+            {/* Left Column  */}
             <motion.div
               className="space-y-8 "
               initial={{ opacity: 0, x: -60 }}
@@ -61,32 +61,21 @@ const HeroSection: React.FC = () => {
             >
               <div className="space-y-8 ">
                 <motion.p
-                  className="text-xl text-gray-700 leading-relaxed font-light tracking-wide text-left "
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.5 }}
-                >
-                  <span className="text-3xl text-blue-800 font-light float-left mr-3 ">
-                    Shankhya.AI
-                  </span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  asperiores quod .
-                </motion.p>
-
-                <motion.p
                   className="text-lg text-gray-600 leading-relaxed font-light border-l-4 border-blue-200 mr-5 pl-6 py-1 text-left"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.7 }}
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Tenetur velit repellendus omnis odit deserunt, debitis eum
-                  error autem ipsum temporibus nesciunt voluptates sequi?
-                  Dolorem, fugit quo? Est voluptate a aperiam.
+                  Shankhya.ai Software Solutions Private Limited is a software
+                  product developing company where we endeavor on highly
+                  proficient, propitious, and cost-effective software products.
+                  Shankhya.ai have highly skilled personnel's offering software
+                  products using the best innovative minds, skills and using
+                  cutting-edge technologies.
                 </motion.p>
               </div>
 
-              {/* Refined Stats */}
+              {/*  Stats */}
               <motion.div
                 className="grid grid-cols-2 gap-8 pt-2 mt-2 border-t border-gray-100"
                 initial={{ opacity: 0, y: 30 }}
@@ -94,8 +83,8 @@ const HeroSection: React.FC = () => {
                 transition={{ delay: 0.9 }}
               >
                 {[
-                  { number: "5+", label: "Years Excellence" },
-                  { number: "50+", label: "Projects Completed" },
+                  { number: "10+", label: "Happy Clients" },
+                  { number: "15+", label: "Projects Completed" },
                   // { number: "30+", label: "Happy Clients" },
                   // { number: "5+", label: "Awards Won" },
                 ].map((stat) => (
@@ -117,7 +106,7 @@ const HeroSection: React.FC = () => {
               </motion.div>
             </motion.div>
 
-            {/* Right Column - Premium Image Presentation */}
+            {/* Right Column  */}
             <motion.div
               className="relative"
               initial={{ opacity: 0, x: 60 }}
@@ -134,36 +123,10 @@ const HeroSection: React.FC = () => {
                   <img
                     src="/about/hero.jpg"
                     alt="Modern architectural design"
-                    className="w-full h-full object-fill transform group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full lg:h-[50vh] object-fill transform group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-
-                  {/* Image Overlay Content */}
-                  <div className="absolute bottom-8 left-8 text-white">
-                    <div className="text-sm font-light opacity-90">
-                      Featured Project
-                    </div>
-                    <div className="text-xl font-semibold">
-                      Modern Residence
-                    </div>
-                  </div>
                 </motion.div>
-
-                {/* Floating Elements */}
-                {/* <motion.div
-                  className="absolute -top-6 -right-6 w-32 h-32 bg-white rounded-2xl shadow-2xl flex items-center justify-center border border-gray-100"
-                  initial={{ opacity: 0, scale: 0, rotate: -45 }}
-                  animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                  transition={{ delay: 1, duration: 0.6 }}
-                  whileHover={{ rotate: 5, scale: 1.05 }}
-                >
-                  <div className="text-center">
-                    <div className="text-2xl">🏆</div>
-                    <div className="text-xs font-semibold text-gray-700 mt-1">
-                      Award 2024
-                    </div>
-                  </div>
-                </motion.div> */}
               </div>
             </motion.div>
           </div>

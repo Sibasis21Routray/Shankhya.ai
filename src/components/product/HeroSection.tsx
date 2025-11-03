@@ -26,7 +26,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 ">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {/* Grid Pattern */}
@@ -63,10 +63,11 @@ const HeroSection = () => {
               className="text-xl text-gray-300 leading-relaxed max-w-2xl text-left"
               variants={itemVariants}
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio,
-              tempora sunt eligendi nobis veritatis corrupti excepturi in
-              dolore, incidunt fuga tenetur minus quas blanditiis ipsum
-              exercitationem corporis? Ipsum, recusandae doloremque?
+              Shankhya.Ai is a software product developing company where we
+              endeavor on highly proficient, propitious and cost-effective
+              software products. Shankhya have highly skilled personnel's
+              offering software products using the best innovative minds, skills
+              & using cutting-edge technologies.
             </motion.p>
 
             {/* Stats */}
@@ -126,9 +127,7 @@ const HeroSection = () => {
 
           {/* Right Content - Enhanced Product Showcase */}
           <motion.div className="relative" variants={itemVariants}>
-            <div className="relative w-full max-w-lg mx-auto">
-              
-
+            <div className="relative w-full  mx-auto">
               {/* Main Card */}
               <motion.div
                 className="relative shadow-2xl border border-blue-700/40 p-5 rounded-lg overflow-hidden"
@@ -235,25 +234,6 @@ const HeroSection = () => {
                       />
                     </motion.div>
                   ))}
-                </div>
-
-                {/* Footer Stats */}
-                <div className="relative flex items-center justify-between pt-6 border-t border-white/10">
-                  <div className="flex items-center gap-3">
-                    <div className="flex items-center gap-2">
-                      <span className="text-gray-400 text-sm font-medium">
-                        All products are live
-                      </span>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-xs text-gray-400 font-medium">
-                      Powered by
-                    </div>
-                    <div className="text-sm text-white font-bold bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">
-                      Shankhya AI
-                    </div>
-                  </div>
                 </div>
               </motion.div>
             </div>

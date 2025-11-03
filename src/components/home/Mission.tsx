@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
-import { Target, Eye, Rocket, Users } from "lucide-react";
+import { Target, Rocket } from "lucide-react";
 
 const Mission = () => {
   const missionData = {
-    vision: {
-      icon: <Eye className="w-8 h-8" />,
-      title: "Our Vision",
-      description:
-        "To revolutionize the blockchain gaming industry by creating seamless, transparent, and engaging experiences that bridge the gap between traditional gaming and Web3 technology.",
-    },
+    // vision: {
+    //   icon: <Eye className="w-8 h-8" />,
+    //   title: "Our Vision",
+    //   description:
+    //     "To revolutionize the blockchain gaming industry by creating seamless, transparent, and engaging experiences that bridge the gap between traditional gaming and Web3 technology.",
+    // },
     mission: {
       icon: <Target className="w-8 h-8" />,
       title: "Our Mission",
@@ -21,12 +21,12 @@ const Mission = () => {
       description:
         "Leveraging advanced AI and blockchain technology to create dynamic gaming ecosystems where every transaction is secure, every bonus is transparent, and every player experience is exceptional.",
     },
-    values: {
-      icon: <Users className="w-8 h-8" />,
-      title: "Our Values",
-      description:
-        "Innovation, transparency, and user-centric design drive everything we do. We believe in building trust through technology and creating value for both platform operators and players alike.",
-    },
+    // values: {
+    //   icon: <Users className="w-8 h-8" />,
+    //   title: "Our Values",
+    //   description:
+    //     "Innovation, transparency, and user-centric design drive everything we do. We believe in building trust through technology and creating value for both platform operators and players alike.",
+    // },
   };
 
   const containerVariants = {
@@ -59,7 +59,6 @@ const Mission = () => {
       </div> */}
 
       <div className="max-w-7xl mx-auto relative z-10">
-       
         {/* Header */}
         <motion.div
           className="text-center mb-6"
@@ -101,9 +100,9 @@ const Mission = () => {
         {/* box */}
         <div className=" flex flex-col lg:flex-row mb-10">
           {/* image */}
-          <div>
+          <div className="">
             <img
-              src="/hero/mission.jpg"
+              src="/hero/mission.webp"
               alt="Mission Image"
               loading="lazy"
               className="mx-auto mb-12 rounded-xl  w-full max-w-4xl"
@@ -112,7 +111,7 @@ const Mission = () => {
           {/* Mission Grid */}
           <div className="w-full  lg:w-4/5">
             <motion.div
-              className="  space-y-5"
+              className="  space-y-5 mt-0 lg:mt-10 "
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
@@ -153,7 +152,7 @@ const Mission = () => {
               </motion.div>
 
               {/* Vision Card */}
-              <motion.div
+              {/* <motion.div
                 className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 h-fit flex flex-col"
                 variants={itemVariants}
                 whileHover={{ y: -4, scale: 1.02 }}
@@ -184,7 +183,7 @@ const Mission = () => {
                 >
                   {missionData.vision.description}
                 </motion.p>
-              </motion.div>
+              </motion.div> */}
 
               {/* Approach Card */}
               <motion.div
